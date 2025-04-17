@@ -1,0 +1,461 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/740970030878949406/867979082632146954/odontologia.png">
+    <title>RCM</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+    body{
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+    h2{
+        color: #a1b13c;
+        font-size: 250%;
+        font-family: 'Almarai', sans-serif;
+        font-weight: 300px;
+            margin:15px 0 ;
+        }    
+    .line{
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #bbcd48;
+    }
+    .arriba{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .logo{
+        width: 350px;
+        height: 125px;
+        padding: 10px 0 30px 0;
+        margin-left: 40%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .botones{
+        margin-top: -150px;
+        margin-left: 85%;
+        width: 12%;
+        height: 80px;        
+    }
+    .bt{
+        width: 200px;
+        height: 33px;
+        margin-bottom: 10px;
+        font-size: 90%;
+        font-weight: 100px;
+        font-family: 'Almarai', sans-serif;
+        color: #fff;
+        background-color: #bbcd48;
+        border-bottom: 2px solid #e7ee97;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+    }
+    /* Menu */
+    #mnu{
+        z-index: auto;
+        right: 50px;
+             
+        }
+    .menu{
+        width: 100%;
+        margin-left: auto;
+        margin-top: 10px;
+
+        }
+    .menu ul{
+        margin:0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.47);
+    }
+    .menu li{
+        border-right: 2px solid #ffffff;
+        border-bottom: 2px solid #bbcd48;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .menu li:hover{
+        background:rgba(187, 205, 72, 0.43);
+        border: 1px solid #ffff;
+    }
+    .menu li a{
+        display: block;
+        padding: 15px 20px;
+        color: #413e3e;
+        text-decoration: none;
+    }
+    .wave{
+        background-image: url(https://cdn.discordapp.com/attachments/740970030878949406/868532435317575700/7b215431-5c40-4c10-9018-ad02c4d0b86c.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position:bottom;
+        margin-top: 1%;
+    }
+    .contenido{
+        display: flex;
+        height: 88%;
+        align-items: center;
+        margin-top: -300px;
+        margin-left: 10%;
+    }
+    h1{
+        margin-top: 2%;
+        font-size: 300%;
+        margin-left: -2px;
+        font-family: 'Almarai', sans-serif;
+        color: #848484 ;
+    }
+    .textoo p{
+        margin-top: -1%;
+        margin-left: 20px;
+    }   
+    .cita{
+        width: 25%;
+        height: 14%;
+        font-size: 90%;
+        font-weight: 100px;
+        font-family: 'Almarai', sans-serif;
+        color: #fff;
+        padding: 12px 0; 
+        background-color: #bbcd48;
+        border-bottom: 2px solid #e7ee97;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        margin-top: 0%;
+        margin-left: 1%;
+        cursor: pointer;
+        }
+    button a{
+        text-decoration: none;
+        color: inherit;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .textoo{
+        width: 50%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px; 
+        justify-content: center;
+        margin-top: -110%;
+        margin-left: 20%;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.81);
+    }
+      
+    .presentacion{
+        margin-top: -47%;
+        padding-top: o;
+        text-align: center;
+    }
+    .presentacion_foto{    
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    .descripcion{
+        width: 80%;
+        margin: 0 auto;
+    }
+        
+    .separador
+    {
+        background-color: rgba(161, 177, 60, 0.54);
+        width: 100%;
+        height: 0.2%;
+        margin-top:5%;
+    }
+        
+    .cont{
+        width: 90%;
+        display: flex;
+        object-position: center;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        margin-left: 5%;
+    }
+    .cont .sct{
+        width: 90%;
+        background-color: #bbcd48;
+        box-shadow: 0 3px 5px #413e3e;
+        border-radius: 5px;
+        padding: 30px 25px;
+        color: #fff;
+        height: 55%;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        margin-top: 4%;
+      }
+      .cont .sct:hover{
+          transform: translateY(-15px);
+          box-shadow: 0 18px 18px rgba(0, 0, 0, 0.2);
+      }
+      .cont .sct img{
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          object-position: left;
+          border-radius: 50%;
+          border: 3px solid #fff;
+          margin-right: 85%;
+      }
+      
+      .cont .sct h4{
+          font-size: 200%;
+          font-family: 'Almarai', sans-serif;
+          font-weight: 300px;
+          margin-top: -26%;
+          margin-left: 30%;
+      }
+      
+      .cont .sct p{
+          padding: 0 1rem;
+          font-size: 100%;
+          font-weight: 300;
+          text-align:justify;
+          margin-top: 8%;
+          margin-left: 30%;
+      }
+        .SobreNosotros{
+            margin-top: 5%;
+            padding-top: 0;
+            text-align: center;
+    
+        }
+       
+        .SobreNosotros .title{
+            color: #a1b13c;
+            font-size: 250%;
+            font-family: 'Almarai', sans-serif;
+            font-weight: 300px;
+            text-align: center;
+        }
+        .SobreNosotros .Descripcion{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .portafolio{
+            background: rgba(242, 242, 242, 0.47);
+        }
+        .contenido_galeria{
+            margin: 6% 0 6% 0;
+            padding:30px 70px 70px 70px;
+            text-align: center;
+        }
+        .galeria_port{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .imagen_port{
+            width: 20%;
+            margin: 0;
+        }
+        .imagen_port img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            
+        }
+    
+    
+    .otro_contenedor{
+        margin: -50px 50px 50px 50px;
+        min-height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 80px;
+        justify-items:center;
+        align-items: center;
+      
+    }
+    .oc_img{
+        text-align: center;
+    }
+    .oc_img--left{
+        text-align: center;
+    }
+    .oc_foto{
+        max-width: 60%;
+    }
+    .oc_parrafo{
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-weight: 300;
+    }    
+    .footer{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgb(230, 230, 230);
+          height: 340px;
+      }
+      .loguito-footer
+      {
+          width: 350px;
+      }
+      .MapaFooter
+      {
+          margin-right: 25px;
+          border-radius: 5px;
+      }
+      .info-footer
+      {
+          background-color: rgb(230, 230, 230);  
+          padding: 5px 5px 5px 5px;
+          border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+<header>
+            
+<div class="line"></div>
+        
+<section class="arriba">
+    <div id="logo">
+        <img src="https://cdn.discordapp.com/attachments/740970030878949406/867956916343693402/0.png" alt="" class="logo">
+    </div>
+            
+    <div class="botones">
+        <button class="bt" type="button"><a href="form-inicio.html">Iniciar Sesion</a></button> 
+    </div>
+</section>
+    <main>
+        <div id="mnu">
+        <nav class="menu">
+             <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </main>
+      <div class="wave" style=" height: 110%; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;"><path d="M0.00,59.98 C159.99,80.00 329.20,49.98 500.00,49.98 L501.69,102.13 L-6.77,107.06 Z" style="stroke: none; fill: #ffffff;"></path></svg>
+      </div>
+    
+     <div class="contenido">
+        <div class="textoo">
+            <h1>RCM</h1>
+            <p> RCM ortodoncia y ortopedia maxilar  es una empresa dedicada al cuidado de la salud dental ofreciendo servicios como ortodoncia, ortopedia maxilar, armonización orofacial radiología oral y maxilofacial.<br> Por qué tu te lo mereces y yo te lo brindo RCM</p>
+            
+            <button class="cita" type="button"><a href="form-citas.html">¡pide tu Cita ya¡</a></button>
+        </div>
+    </div>
+    </header>
+    
+    <section class="Presentacion">
+    <img class="Presentacion_foto" src="https://cdn.discordapp.com/attachments/740970030878949406/868396347466842193/2f4adeec-14c2-4618-a6c5-7aa0dd372305.png" alt="">
+        <h2 class="subtitulo">Doctor Rafael Calderon Martinez</h2>
+        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis, elementum malesuada sem facilisi potenti accumsan ullamcorper blandit tristique, risus a arcu praesent ante netus cum turpis. Sed natoque vitae sollicitudin turpis commodo curae risus tempor vivamus, etiam vel scelerisque lobortis taciti suscipit hendrerit pulvinar, consequat augue magnis sodales habitasse fames mus sociis.</p>
+    </section>
+    
+    <div class="separador"></div>
+    
+    <section class="cont">
+                <div class="sct">
+                    <img src="https://cdn.discordapp.com/attachments/740970030878949406/868546984276029520/7cd4b5a9-df96-4e54-b729-7251d7fcc882.png">
+                    <h4>Ortodoncia</h4>
+                    <p>Ortodoncia es una especialidad de la odontología que se encarga de la corrección de los dientes y huesos posicionados incorrectamente.</p>
+                    
+                </div>
+                <div class="sct">
+                    <img src="https://cdn.discordapp.com/attachments/740970030878949406/868546997752299520/0bc54d6a-86d5-45e7-aa66-e010a3b94d5d.png">
+                    <h4>Ortopedia Maxilar</h4>
+                    <p>Es el arte de corregir o de evitar las deformidades de los maxilares, por medio de ciertos aparatos o de ejercicios funcionales. </p>
+                </div>
+                <div class="sct">
+                    <img src="https://cdn.discordapp.com/attachments/740970030878949406/868583411424587836/3baa8cbd-3c8e-43ec-83f0-e10592575296.png">
+                    <h4>Armonización Orofacial</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis.</p>
+                </div>
+                </section>
+    
+    <section class="SobreNosotros">
+    
+    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis, elementum malesuada sem facilisi potenti accumsan ullamcorper blandit tristique, risus a arcu praesent ante netus cum turpis. Sed natoque vitae sollicitudin turpis commodo curae risus tempor vivamus, etiam vel scelerisque lobortis taciti suscipit hendrerit pulvinar, consequat augue magnis sodales habitasse fames mus sociis.</p>
+    </section>
+    
+    <section class="Portafolio">
+    <div class="contenido_galeria">
+        <h2>Galeria</h2>
+        <div class="galeria_port">
+            <div class="imagen_port">
+                <img src="https://cdn.discordapp.com/attachments/740703330950578188/868966239811305482/quang-tri-nguyen-VckdJzo7ig0-unsplash.jpg" alt="" class="cards">
+            </div>
+           <div class="imagen_port">
+                <img src="https://cdn.discordapp.com/attachments/740703330950578188/868966259402891334/national-cancer-institute-701-FJcjLAQ-unsplash.jpg" alt="" class="cards">
+            </div>
+            <div class="imagen_port">
+                <img src="https://cdn.discordapp.com/attachments/740703330950578188/868966276800864256/quang-tri-nguyen-objNAvixRho-unsplash.jpg" alt="" class="cards">
+            </div>
+            <div class="imagen_port">
+                <img src="https://cdn.discordapp.com/attachments/740703330950578188/868966290902118420/quang-tri-nguyen-vxGl2utBFRo-unsplash.jpg" alt="" class="cards">
+            </div>
+            <div class="imagen_port">
+                <img src="https://cdn.discordapp.com/attachments/740970030878949406/867949618065981440/galeria_0002_odontologia-bogota-sanmartin.png" alt="" class="cards">
+            
+            </div>
+    </div>
+        </div>
+    </section>
+    
+    <section class="otro_contenedor">
+    <div class="oc_texto">
+        <h2 class="oc_subtitulo">Lorem Ipsum</h2>
+        <p class="oc_parrafo">Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis, elementum malesuada sem facilisi potenti accumsan ullamcorper blandit tristique, risus a arcu praesent ante netus cum turpis. Sed natoque vitae sollicitudin turpis commodo curae risus tempor vivamus, etiam vel scelerisque lobortis taciti suscipit hendrerit pulvinar, consequat augue magnis sodales habitasse fames mus sociis.</p>
+        <p class="oc_parrafo">Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis, elementum malesuada sem facilisi potenti accumsan ullamcorper blandit tristique, risus a arcu praesent ante netus cum turpis. Sed natoque vitae sollicitudin turpis commodo curae risus tempor vivamus, etiam vel scelerisque lobortis taciti suscipit hendrerit pulvinar, consequat augue magnis sodales habitasse fames mus sociis.</p>
+        </div>
+        
+        <div class="oc_img">
+        <img class="oc_foto" src="https://cdn.discordapp.com/attachments/740703330950578188/869329571344973854/superkitina-rCT928GIboM-unsplash.jpg" alt="">
+        </div>
+        <img class="oc_foto" src="https://cdn.discordapp.com/attachments/740703330950578188/869325995688198184/quang-tri-nguyen-T-iifFLk3KU-unsplash.jpg" alt="">
+        
+        <div class="oc_texto">
+        <h2 class="oc_subtitulo">Lorem Ipsum </h2>
+        <p class="oc_parrafo">Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis, elementum malesuada sem facilisi potenti accumsan ullamcorper blandit tristique, risus a arcu praesent ante netus cum turpis. Sed natoque vitae sollicitudin turpis commodo curae risus tempor vivamus, etiam vel scelerisque lobortis taciti suscipit hendrerit pulvinar, consequat augue magnis sodales habitasse fames mus sociis.</p>
+        <p class="oc_parrafo">Lorem ipsum dolor sit amet consectetur adipiscing elit platea iaculis, elementum malesuada sem facilisi potenti accumsan ullamcorper blandit tristique, risus a arcu praesent ante netus cum turpis. Sed natoque vitae sollicitudin turpis commodo curae risus tempor vivamus, etiam vel scelerisque lobortis taciti suscipit hendrerit pulvinar, consequat augue magnis sodales habitasse fames mus sociis.</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+            <img class="loguito-footer" src="https://media.discordapp.net/attachments/434478596426301486/868702235926863932/logoPNG.png?width=902&height=676">
+            <div class="info-footer">
+                <p>
+                    <h2>CONTACTANOS</h2>
+                    <br><a href="api.whatsapp.com/send?phone=573204927323&text=Ortodoncia">WhatsApp</a>
+                    <h2>DIRECCION</h2>
+                    <BR>Cl. 45a #20-96, Teusaquillo, Bogotá
+                </p>
+            </div>
+            <iframe class="MapaFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.77494744168!2d-74.07591134917864!3d4.634196143503285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2c54bd6f1d%3A0x74a39accc144b540!2sCl.%2045a%20%2320-96%2C%20Teusaquillo%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1627173263388!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </footer>
+    
+</body> 
+</html>

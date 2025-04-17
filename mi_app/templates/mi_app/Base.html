@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RCM</title>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/740970030878949406/867979082632146954/odontologia.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap JS (Popper.js incluido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Almarai&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+        }
+        h2 {
+            color: #a1b13c;
+            font-size: 2.5rem;
+            font-family: 'Almarai', sans-serif;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .line{
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #bbcd48;
+    }
+        .navbar-brand img {
+            width: 150px;
+        }
+        .wave {
+            background: url(https://cdn.discordapp.com/attachments/740970030878949406/868532435317575700/7b215431-5c40-4c10-9018-ad02c4d0b86c.png) no-repeat center;
+            background-size: cover;
+            height: 100px;
+        }
+        .separador {
+            background-color: rgba(161, 177, 60, 0.54);
+            width: 100%;
+            height: 2px;
+            margin: 5% 0;
+        }
+        .sct {
+            text-align: center;
+            background-color: #bbcd48;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .sct:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background-color: rgb(230, 230, 230);
+            padding: 20px 0;
+        }
+        .btn{
+            font-size: 90%;
+            font-family: 'Almarai', sans-serif;
+            color: white;
+            background-color: #bbcd48;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover{
+            font-size: 90%;
+            font-family: 'Almarai', sans-serif;
+            color: inherit;
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border: 1px solid #bbcd48;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="line"></div><br>
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <!-- Logo centrado -->
+            <div class="mx-auto">
+                <img src="https://cdn.discordapp.com/attachments/740970030878949406/867956916343693402/0.png" alt="RCM" class="img-fluid" width="350">
+            </div>
+            
+            <!-- Botón de Iniciar Sesión alineado a la derecha -->
+            <div class="botones">
+                <button class="btn" type="button">
+                    <a href="login" >Iniciar Sesion</a>
+                </button> 
+            </div>
+        </div>    
+    </header>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="https://cdn.discordapp.com/attachments/740970030878949406/867956916343693402/0.png" alt="RCM"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Portafolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="wave"></div>
+
+<!-- Sección de presentación -->
+<section class="container my-5 text-center">
+    <h1 class="text-success">RCM</h1>
+    <p class="lead">RCM ortodoncia y ortopedia maxilar es una empresa dedicada al cuidado de la salud dental...</p>
+    <button class="btn" type="button">
+        <a href="form-citas.html">¡Pide tu Cita ya!</a>
+    </button>
+</section>
+
+<div class="separador"></div>
+
+<!-- Servicios -->
+<section class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="sct">
+                <img src="https://cdn.discordapp.com/attachments/740970030878949406/868546984276029520/7cd4b5a9-df96-4e54-b729-7251d7fcc882.png" width="100">
+                <h4>Ortodoncia</h4>
+                <p>Corrección de dientes y huesos mal posicionados.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sct">
+                <img src="https://cdn.discordapp.com/attachments/740970030878949406/868546997752299520/0bc54d6a-86d5-45e7-aa66-e010a3b94d5d.png" width="100">
+                <h4>Ortopedia Maxilar</h4>
+                <p>Corrección de deformidades maxilares con aparatos.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sct">
+                <img src="https://cdn.discordapp.com/attachments/740970030878949406/868583411424587836/3baa8cbd-3c8e-43ec-83f0-e10592575296.png" width="100">
+                <h4>Armonización Orofacial</h4>
+                <p>Tratamientos para mejorar la estética facial y personal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="separador"></div>
+
+<!-- Galería -->
+<section class="container my-5 text-center">
+    <h2>Galería</h2>
+    <div class="row g-4">
+        <div class="col-md-4"><img src="..." class="img-fluid rounded"></div>
+        <div class="col-md-4"><img src="..." class="img-fluid rounded"></div>
+        <div class="col-md-4"><img src="..." class="img-fluid rounded"></div>
+    </div>
+</section>
+<!-- Footer -->
+    
+    {% include 'mi_app/Footer.html' %} 
+
+</body>
+</html>

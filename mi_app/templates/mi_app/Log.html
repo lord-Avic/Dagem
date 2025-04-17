@@ -1,0 +1,175 @@
+<html lang="es">
+    <head>
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/740970030878949406/867979082632146954/odontologia.png">
+    <title>Inicio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+         
+        body{
+               margin: 0;
+               padding: 0;
+               font-family: 'Raleway', sans-serif;
+               background-image:url(https://cdn.discordapp.com/attachments/740970030878949406/868532435317575700/7b215431-5c40-4c10-9018-ad02c4d0b86c.png);
+               background-repeat: no-repeat;
+               width: auto;
+               height: auto;
+               background-repeat:no-repeat;
+               background-size:cover;
+               background-attachment: fixed;
+               position: relative; 
+               backdrop-filter: blur(10px);
+             }
+             .line{
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #bbcd48;
+}
+    .arriba{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .logo{
+            width: 350px;
+            height: 125px;
+            padding: 10px 0 30px 0;
+            margin-left: 40%;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    header{
+        background-color: #ffffff;
+        width: 100%;
+    }
+         #mnu{
+            z-index: auto;
+            right: 50px;
+             
+        }
+        .menu{
+            width: 100%;
+            margin-left: auto;
+            margin-top: 10px;
+
+        }
+        .menu ul{
+            margin:0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.47);
+        }
+        .menu li{
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #bbcd48;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .menu li:hover{
+            background:rgba(187, 205, 72, 0.43);
+            border: 1px solid #ffff;
+        }
+        .menu li a{
+            display: block;
+            padding: 15px 20px;
+            color: #413e3e;
+            text-decoration: none;
+        }    
+        form {
+                font-family: 'Raleway', sans-serif;
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto 0 auto;
+                border-radius: 7px;
+                background:#868685be;
+                height: 420px;
+                backdrop-filter: blur(10px);
+            }
+            .titulo {
+                background: rgba(187, 211, 8, 0.65);
+                color: white;
+                padding: 20px;
+                text-align: center;
+                font-weight: 100;
+                font-size: 30px;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+            }
+            .contenedor {
+                padding: 5% 26%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                color: rgb(255, 255, 255);
+            }
+            input {
+                padding:10px 50px;
+                width:90%;
+                margin:5px 0 15px;
+                font-size: 15px;
+                border-radius: 3px;
+                border:none; 
+                background:#bdbdbe;
+                border-bottom:2px solid #e7ee97;
+                outline:none;
+            }
+            input[type=submit]{
+
+                display:block;
+                color:#fff;
+                margin:0 auto;
+                margin-left: 0;
+                margin-top: 5%;
+                padding:10px 80px;
+                margin-bottom: 25%;
+                font-size:1.04em;
+                cursor: pointer;
+                border:2px solid #bbd308;
+                border-radius: 30px;
+                outline:none;
+                background:#bbd308;
+                font-weight:500;
+                }
+    </style>        
+    </head>
+    <body>
+        <header>
+            
+            <div class="line"></div>
+                    
+            <section class="arriba">
+                <div id="logo">
+                    <img src="https://cdn.discordapp.com/attachments/740970030878949406/867956916343693402/0.png" alt="" class="logo">
+                </div>
+                        
+            </section>
+                <main>
+                    <div id="mnu">
+                    <nav class="menu">
+                         <ul>
+                            <li><a href="/AgendamientoCitas/MVC/VISTA/Interfaz.html">Volver al Inicio</a></li>
+
+                        </ul>
+                    </nav>
+                    </div>
+                </main>
+                 
+                </header>
+        <form method="POST" action="../CONTROLADOR/ContrInicio.php">
+        <h2 class="titulo">Inicio de Sesion</h2>
+            <div class="contenedor">
+                        <label for="t1" class="form-label">Usuario</label>
+                        <input type="text" required class="form-control" id="t1" name="t1">
+                    
+                    <label for="t2" class="form-label">Contrasena</label>
+                        <input type="password" required class="form-control" id="t2" name="t2">
+                
+            <input type="submit" class="boton" value="Iniciar Sesion" required name="password">
+            </div>
+        </form>
+    </body>
+</html>
