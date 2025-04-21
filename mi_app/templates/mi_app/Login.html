@@ -1,17 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <title>Iniciar Sesión</title>
-</head>
-<body>
-    <h2>Inicio de Sesión</h2>
-    <form method="POST">
-        <button type="submit">Iniciar Sesión</button>
-    </form>
-</body>
-</html>
--->
 <html lang="es">
     <head>
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/740970030878949406/867979082632146954/odontologia.png">
@@ -23,8 +9,14 @@
                margin: 0;
                padding: 0;
                font-family: 'Raleway', sans-serif;
-               background-image:url(https://cdn.discordapp.com/attachments/740970030878949406/868532435317575700/7b215431-5c40-4c10-9018-ad02c4d0b86c.png) no-repeat center center fixed;
+               background-image:url(https://cdn.discordapp.com/attachments/740970030878949406/868532435317575700/7b215431-5c40-4c10-9018-ad02c4d0b86c.png);
+               background-repeat: no-repeat;
+               width: auto;
+               height: auto;
+               background-repeat:no-repeat;
                background-size:cover;
+               background-attachment: fixed;
+               position: relative; 
                backdrop-filter: blur(10px);
              }
         .line{
@@ -32,35 +24,20 @@
             height: 20px;
             position: fixed;
             left: 0;
-            top: 0;
             background: #bbcd48;
         }
-        .arriba{
-            width: 100%;
-            height: auto;
-            padding: 0;
-        }
-        .logo{
-            width: 350px;
-            height: 125px;
-            padding: 10px 0 30px 0;
-            margin-left: 40%;
-            margin-top: 20px;
-            margin-bottom: 5px;
-        }
-        header{
-            background-color: #ffffff;
-            width: 100%;
-        }
-        #mnu{
+    header{
+        background-color: #ffffff;
+        width: 100%;
+    }
+         #mnu{
             z-index: auto;
-            right: 50px;     
+            right: 50px;
+            padding-top: 20px;
+             
         }
         .menu{
             width: 100%;
-            margin-left: auto;
-            margin-top: 10px;
-
         }
         .menu ul{
             margin:0;
@@ -71,7 +48,6 @@
             background: rgba(255, 255, 255, 0.47);
         }
         .menu li{
-            border-right: 2px solid #ffffff;
             border-bottom: 2px solid #bbcd48;
             text-align: center;
             flex-grow: 1;
@@ -87,85 +63,79 @@
             text-decoration: none;
         }    
         form {
-            font-family: 'Raleway', sans-serif;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto 0 auto;
-            border-radius: 7px;
-            background: grai;
-            height: 420px;
-            backdrop-filter: blur(10px);
-        }
-        .titulo {
-            background: rgba(187, 211, 8, 0.65);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-weight: 100;
-            font-size: 30px;
-            border-top-left-radius: 7px;
-            border-top-right-radius: 7px;
-        }
-        .contenedor {
-            padding: 5% 26%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            color: rgb(255, 255, 255);
-        }
-        input {
-            padding:10px 50px;
-            width:90%;
-            margin:5px 0 15px;
-            font-size: 15px;
-            border-radius: 3px;
-            border:none; 
-            background:#bdbdbe;
-            border-bottom:2px solid #e7ee97;
-            outline:none;
-        }
-        input[type=submit]{
-
-            display:block;
-            color:#fff;
-            margin:0 auto;
-            margin-left: 0;
-            margin-top: 5%;
-            padding:10px 80px;
-            margin-bottom: 25%;
-            font-size:1.04em;
-            cursor: pointer;
-            border:2px solid #bbd308;
-            border-radius: 30px;
-            outline:none;
-            background:#bbd308;
-            font-weight:500;
+                font-family: 'Raleway', sans-serif;
+                max-width: 50%;
+                margin: 0 auto 0 auto;
+                border: 2px solid #a3b340;
+                background:#ffffff;
+                height: 60%;
+                backdrop-filter: blur(10px);
+                margin-top: 3%;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
             }
+            .titulo {
+                background: rgba(187, 211, 8, 0.65);
+                color: white;
+                padding: 20px;
+                text-align: center;
+                font-weight: 100;
+                font-size: 30px;
+            }
+            .contenedor {
+                padding: 5% 26%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                color: rgb(119, 119, 119);
+            }
+            h2{
+                margin: 0px;
+            }
+            input {
+                padding:10px 50px;
+                width:90%;
+                margin:5px 0 15px;
+                font-size: 15px;
+                border-radius: 3px;
+                border:none; 
+                background:#aaaaaabe;
+                border-bottom:2px solid #e7ee97;
+                outline:none;
+            }
+            input[type=submit]{
+
+                display:block;
+                color:#fff;
+                margin:0 auto;
+                margin-left: 0;
+                margin-top: 5%;
+                padding:10px 80px;
+                margin-bottom: 25%;
+                font-size:1.04em;
+                cursor: pointer;
+                border:2px solid #bbd308;
+                border-radius: 30px;
+                outline:none;
+                background:#bbd308;
+                font-weight:500;
+                }
     </style>        
     </head>
     <body>
         <header>
-            
-            <div class="line"></div>
-                    
-            <section class="arriba">
-                <div id="logo">
-                    <img src="https://cdn.discordapp.com/attachments/740970030878949406/867956916343693402/0.png" alt="" class="logo">
-                </div>
-                        
-            </section>
+            <div class="line">
+            </div>
                 <main>
                     <div id="mnu">
-                    <nav class="menu">
-                         <ul>
-                            <li><a href="{% url 'index' %}">Volver al Inicio</a></li>
-                        </ul>
-                    </nav>
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="{% url 'index' %}">Volver al Inicio</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </main>
-                 
                 </header>
-        
         <form method="POST" autocomplete="off">
             <h2 class="titulo">Inicio de Sesion</h2>
                 <div class="contenedor">
