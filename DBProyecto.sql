@@ -187,3 +187,99 @@ BEGIN
 
     PRINT '✅ Usuario registrado con contraseña cifrada.';
 END;
+
+/*Procedimiento de consulta de cedula---------------------------------------------------------------------------*/
+create procedure ConsCedula
+(
+	@Cedulausuario BIGINT
+)
+AS
+BEGIN
+	SELECT Cedulausuario
+	From usuario
+	where Cedulausuario = @Cedulausuario;
+END
+
+/*procedimiento de AccesoUsuarios --------------------------------------------------------------------------------*/
+
+create procedure AccesUsuario
+(
+	@a varchar(255),
+	@b varchar(255)
+)
+as
+begin
+	select rol 
+	from usuario
+	where Nombreusuario = @a and Contraseñausuario = @b
+end
+
+/*Procedimiento de consulta de usuario --------------------------------------------------------------------------*/
+
+create procedure ConsUsuarios
+(
+	@documento bigint
+)
+as
+begin
+	select Cedulausuario,Nombres,Apellidos,Genero,Direccion,Correo,Nombreusuario, Estadousuario, Tarjetaprofesional,Especialidad,Rol,fechanacimiento,telefono
+	from usuario
+	where Cedulausuario = @documento
+end
+
+/*Consutla de Rol-------------------------------------------*/
+
+create procedure ConsultaRol
+(
+	@Rol varchar(50)
+)
+as
+begin
+	if @Rol not in ('Administrador','Doctor','Paciente')
+	begin
+		raiserror('El Rol especifico no es valido',16,1)
+	return 
+	end 
+	select cedulausuario, nombres, apellidos, genero, direccion, correo, nombreusuario, estadousuario , tarjetaprofesional, especialidad, fechanacimiento, telefono 
+	from usuario 
+	where Rol = @rol
+end
+
+/*#procedimiento almacenado ConsultaHistoria--------------------------------------------------------------------------------------*/
+
+CREATE PROCEDURE ConsHistoriaClinica
+
+	@Doc bigint
+
+as
+begin
+	SELECT hc.id_historialclinico, hc.cedula, u.nombres, u.apellidos, u.rol, 
+           hc.estatura, hc.peso, ep.enfermedad_padecida, a.alergia, 
+           t.historial_tratamiento
+    FROM usuario u 
+    INNER JOIN historiaclinica hc ON u.cedulausuario = hc.cedula 
+    INNER JOIN enfermedadpadecida ep ON hc.id_historialclinico = ep.id_historialclinico 
+    INNER JOIN alergia a ON ep.id_historialclinico = a.id_historialclinico 
+    INNER JOIN tratamiento t ON a.id_historialclinico = t.id_historialclinico 
+    WHERE @Doc = hc.Cedula;
+END;
+go
+
+/*procedimiento consulta agenda -------------------------------------------------------------------------------*/
+CREATE PROCEDURE ConsAgenda
+	@Doc bigint
+as
+begin
+	SELECT a.codigoagenda, a.ceduladoctor, c.id_cita, c.cedula_paciente,u.nombres, u.apellidos, c.hora_atencion, c.fecha_atencion,c.consultorio, c.motivo
+	from usuario u
+	INNER JOIN agenda a ON u.Cedulausuario = a.ceduladoctor
+	INNER JOIN cita	c ON a.ceduladoctor = c.cedula_doctor_atiende
+	where a.ceduladoctor = @Doc;
+END;
+
+
+
+
+
+
+
