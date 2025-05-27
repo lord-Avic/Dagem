@@ -277,6 +277,20 @@ begin
 	where a.ceduladoctor = @Doc;
 END;
 
+/*Procedimiento consulta cita
+create procedure ConsCita
+
+	@Doc bigint
+
+as
+begin
+	SELECT	c.id_cita, a.ceduladoctor, c.codigo_agenda,c.cedula_paciente, u.nombres, u.apellidos, u.estadousuario, c.fecha_atencion, c.hora_atencion, c.hora_atencion, c.valor, c.consultorio, c.motivo
+	from usuario u
+	INNER JOIN CITA c on u.cedulausuario = c.cedula_doctor_atiende 
+	INNER JOIN AGENDA a on c.codigo_agenda = a.codigoagenda;
+END;
+GO
+
 
 
 
